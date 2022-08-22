@@ -1,4 +1,4 @@
-# wisha
+# WISHA
 
 A new Flutter project.
 
