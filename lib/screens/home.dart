@@ -14,7 +14,7 @@ class _Home extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
+      body: SizedBox(
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: [
@@ -37,7 +37,8 @@ class _Home extends State<Home> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => Login_Paciente()));
+                          builder: (BuildContext context) =>
+                              const Login_Paciente()));
                     },
                     style: ButtonStyle(
                       backgroundColor:
@@ -59,13 +60,14 @@ class _Home extends State<Home> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => Login_Medico()));
+                          builder: (BuildContext context) =>
+                              const Login_Medico()));
                     },
                     style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.greenAccent),
-                      fixedSize:
-                          MaterialStateProperty.all<Size>(Size.fromWidth(250)),
+                      fixedSize: MaterialStateProperty.all<Size>(
+                          const Size.fromWidth(250)),
                       foregroundColor: MaterialStateProperty.all(Colors.white),
                     ),
                     child: const Text(
