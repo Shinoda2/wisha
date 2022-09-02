@@ -15,7 +15,7 @@ class Chatbot_Screen extends StatefulWidget {
 class _Chatbot_Screen extends State<Chatbot_Screen> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey();
   List<String> _data = [];
-  static const String BOT_URL = "https://wisha-chatbot.herokuapp.com/";
+  static const String BOT_URL = "https://wisha-chatbot.herokuapp.com/bot";
   TextEditingController queryController = TextEditingController();
 
   @override
