@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wisha/screens/login_medico.dart';
 import 'package:wisha/screens/login_paciente.dart';
+import 'package:wisha/screens/chatbot_screen.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -72,6 +73,28 @@ class _Home extends State<Home> {
                     ),
                     child: const Text(
                       'MEDICO',
+                      style: TextStyle(
+                        fontSize: 30,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => Chatbot_Screen()));
+                    },
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.greenAccent),
+                      fixedSize: MaterialStateProperty.all<Size>(
+                          const Size.fromWidth(250)),
+                      foregroundColor: MaterialStateProperty.all(Colors.white),
+                    ),
+                    child: const Text(
+                      'CHATBOT',
                       style: TextStyle(
                         fontSize: 30,
                       ),
