@@ -9,6 +9,18 @@ class Login_Medico extends StatefulWidget {
 class _Login_Medico extends State<Login_Medico> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    String valor;
+    return Scaffold(
+        appBar: AppBar(),
+        body: SizedBox(
+            width: MediaQuery.of(context).size.width,
+            child: Column(
+              children: const [
+                Padding(
+                  padding: EdgeInsets.only(top: 60, bottom: 60),
+                  child: TextField(),
+                )
+              ],
+            )));
   }
 }
